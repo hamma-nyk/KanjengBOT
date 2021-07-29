@@ -1,5 +1,5 @@
 {
-  "name": "termux-bot-wa",
+  "name": "KanjengBOT",
   "version": "0.0.2",
   "description": "No comment",
   "main": "index.js",
@@ -56,10 +56,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fxc7/termux-bot-wa.git"
+    "url": "git+https://github.com/Hamma-nyk/KanjengBOT.git"
   },
   "bugs": {
-    "url": "https://github.com/Fxc7/termux-bot-wa/issues"
+    "url": "https://github.com/Hamma-nyk/KanjengBOT/issues"
   },
-  "homepage": "https://github.com/Fxc7/termux-bot-wa#readme"
+  "homepage": "https://github.com/Hamma-nyk/KanjengBOT#readme"
 }
