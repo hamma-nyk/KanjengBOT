@@ -1,8 +1,6 @@
 <div align="center">
 <img src="https://i.ibb.co/wLh1K92/logo-2.png" alt="KanjengBOT" width="500" /><br/>
-> Whatsapp useful Bot!
->
->
+> Whatsapp useful Bot! <
 </div>
 <br/>
 <br/>
