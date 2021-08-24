@@ -17,10 +17,11 @@
     "whatsapp",
     "bot"
   ],
-  "author": "FarhanXCo",
+  "author": "Hamma",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1",
+	"wa-sticker-hamma": "^2.3.6"
     "async": "^3.2.0",
     "axios": "^0.21.1",
     "brainly-scraper": "^1.0.3",
@@ -50,7 +51,7 @@
     "request": "^2.81.0",
     "seedrandom": "^3.0.5",
     "spinnies": "^0.5.1",
-    "tiktok-scraper": "^1.4.12",
+    "tiktok-scraper": "^1.4.35",
     "vapor-text": "^1.0.5"
   },
   "devDependencies": {},

@@ -45,6 +45,7 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const brainly = require('brainly-scraper')
 const vapor = require('vapor-text')
 const toMs = require('ms')
+const hamma_sticker = require('wa-sticker-hamma')
 const ms = require('parse-ms')
 const path = require('path')
 const cd = 4.32e+7
@@ -104,6 +105,7 @@ const { recognize } = require('./lib/ocr')
 const { exif } = require('./lib/exif')
 const { color, bgcolor } = require('./lib/color')
 const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
+const exif = createExif('BotTikel', '@𝙣𝙮𝙚𝙠_', 'hamma_sticker') //returns the filename with ".exif"
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
@@ -901,7 +903,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif hamma_sticker.exif ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Sticker Done\n~ Follow IG: @nyek_`)
 									fs.unlinkSync(media)	
@@ -929,7 +931,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif hamma_sticker.exif ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Gif Sticker Done\n~ Follow IG: @nyek_`)
 									fs.unlinkSync(media)
@@ -955,7 +957,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								fs.unlinkSync(ranp)
 								if (err) return reply(mess.error.stick)
-								exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${ranw} -o ${ranw}`, async (error) => {
+								exec(`webpmux -set exif hamma_sticker.exif ${ranw} -o ${ranw}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									hamma.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 									fs.unlinkSync(ranw)
@@ -984,7 +986,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1013,7 +1015,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1042,7 +1044,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu2} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1072,7 +1074,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu3} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1101,7 +1103,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu4} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1130,7 +1132,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu5} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1159,7 +1161,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu6} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1188,7 +1190,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu7} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
@@ -1217,7 +1219,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					exec(`wget ${anu8} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('BotTikel', 'Hamma')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif hamma_sticker.exif ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					hamma.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
