@@ -3,8 +3,7 @@
 > Whatsapp useful Bot! <
 </div>
 <br/>
-<br/>
-
+  
 ### Installation
 - pkg update -y
 - pkg upgrade -y
@@ -15,3 +14,8 @@
 - cd KanjengBOT
 - bash install.sh
 - npm start / node hamma.js
+
+### Use
+- !daftar
+- send any pict with capt !sticker
+- enjoy all features
