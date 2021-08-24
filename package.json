@@ -1,6 +1,6 @@
 {
   "name": "KanjengBOT",
-  "version": "0.0.2",
+  "version": "2.0",
   "description": "No comment",
   "main": "index.js",
   "directories": {
@@ -21,7 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1",
-	"wa-sticker-hamma": "^2.3.6"
+	"wa-sticker-hamma": "^2.3.6",
     "async": "^3.2.0",
     "axios": "^0.21.1",
     "brainly-scraper": "^1.0.3",
