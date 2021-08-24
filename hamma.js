@@ -34,7 +34,7 @@ const moment = require('moment-timezone')
 const { exec, spawn } = require('child_process')
 const fetch = require('node-fetch')
 const FileType = require('file-type')
-const tiktod = require('tiktok-scraper')
+//const tiktod = require('tiktok-scraper')
 const ffmpeg = require('fluent-ffmpeg')
 const emojiUnicode = require('emoji-unicode')
 const cheerio = require('cheerio')
@@ -105,7 +105,7 @@ const { recognize } = require('./lib/ocr')
 const { exif } = require('./lib/exif')
 const { color, bgcolor } = require('./lib/color')
 const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
-const exif = createExif('BotTikel', '@𝙣𝙮𝙚𝙠_', 'hamma_sticker') //returns the filename with ".exif"
+const crotexif = hamma_sticker.createExif('BotTikel', '@𝙣𝙮𝙚𝙠_', 'hamma_sticker') //returns the filename with ".exif"
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
