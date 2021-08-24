@@ -1,8 +1,10 @@
 <div align="center">
-<img src="https://i.ibb.co/wLh1K92/logo-2.png" alt="KanjengBOT" width="500" />
-# _**Kanjeng BOT**_ 
+<img src="https://i.ibb.co/wLh1K92/logo-2.png" alt="KanjengBOT" width="500" /> 
 > Whatsapp useful Bot!
-</div><br/>
+>
+>
+</div>
+<br/>
 <br/>
 
 ### Installation
