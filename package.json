@@ -55,7 +55,7 @@
     "vapor-text": "^1.0.5",
     "canvas": "^2.8.0",
     "sleep": "^6.3.0",
-    "chalk":"^5.0.0"
+    "chalk":"^4.1.0"
   },
   "devDependencies": {},
   "repository": {
