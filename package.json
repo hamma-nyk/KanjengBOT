@@ -1,14 +1,17 @@
 {
   "name": "KanjengBOT",
-  "version": "2.0.0",
-  "description": "No comment",
+  "version": "2.1.0",
+  "description": "Useful WhatsApp Bot",
+  "depecrated": false,
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "src": "src",
+    "plugins": "plugins"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "keywords": [
     "termux",
@@ -17,8 +20,17 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Hamma",
-  "license": "ISC",
+  "homepage": "https://github.com/Hamma-nyk/KanjengBOT",
+  "author": {
+    "name": "Hamma"
+  },
+  "repository": {
+    "url": "https://github.com/Hamma-nyk/KanjengBOT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hamma-nyk/KanjengBOT/issues"
+  },
+  "license": "GPL-3.0",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.3",
     "wa-sticker-hamma": "^2.3.6",
@@ -56,14 +68,5 @@
     "canvas": "^2.8.0",
     "sleep": "^6.3.0",
     "chalk":"^4.1.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hamma-nyk/KanjengBOT.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Hamma-nyk/KanjengBOT/issues"
-  },
-  "homepage": "https://github.com/Hamma-nyk/KanjengBOT#readme"
+  }
 }
