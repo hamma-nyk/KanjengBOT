@@ -8,7 +8,7 @@
 - pkg update -y
 - pkg upgrade -y
 - pkg install python -y
-- pkg install nodejs=17.2.0 -y
+- pkg install nodejs -y
 - pkg install git -y
 - git clone https://github.com/Hamma-nyk/KanjengBOT
 - cd KanjengBOT
